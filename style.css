@@ -1,0 +1,16 @@
+.container-fluid{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+#email-field{
+
+    border-bottom: 2px solid rgb(193, 193, 193);
+    
+}
+#email-error{
+    color: red;
+    font-size: 12px;
+}

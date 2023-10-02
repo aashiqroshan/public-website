@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+      #email-field{
+
+border-bottom: 1px solid #a3a3a3;
+
+}
+#email-error{
+color: red;
+font-size: 12px;
+}
+    </style>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("nnHltnRFd_MQ1YReK");
+})();
+</script>
+</head>
+<body>
+    <div class="body">
+        <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Aniwatch</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Most Popular
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Subbed</a></li>
+                      <li><a class="dropdown-item" href="#">Dubbed</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Ova's</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" >new updated</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search your fav shows" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+          <div class="container-fluid carousel">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/onepiece.jpg" class="d-block w-100 h-90" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>One piece</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/demonslayer1.jpg" class="d-block w-100 h-90" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Demon Slayer</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/aot1.jpg" class="d-block w-100 h-90" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Attack On Titan</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div>
+        <div class="container">
+            <div class="row">
+                <div class="card text-center border-2 border-warning m-3" style="width: 250px; height: auto;">
+                    <div class="card-body">
+                        <img src="images/onepiececard.webp" alt="" class="card-img-top">
+                        <h2 class="card-title text-danger">onepiece</h2>
+                        <p class="card-text">onepiece onepiece onepiece onepiece</p>
+                        <button class="btn btn-primary">Watch now</button>
+                    </div>
+                </div>
+                <div class="card text-center border-2 border-warning m-3" style="width: 250px; height: auto;"><div class="card-body">
+                    <img src="images/narutocard.webp" alt="" class="card-img-top">
+                    <h2 class="card-title text-danger">naruto</h2>
+                    <p class="card-text">onepiece onepiece onepiece onepiece</p>
+                    <button class="btn btn-primary">Watch now</button>
+                </div></div>
+                <div class="card text-center border-2 border-warning m-3 " style="width: 250px; height: auto; "><div class="card-body">
+                    <img src="images/aotcard.webp" alt="" class="card-img-top">
+                    <h2 class="card-title text-danger">Attack on titan</h2>
+                    <p class="card-text">onepiece onepiece onepiece onepiece</p>
+                    <button class="btn btn-primary">Warch now</button>
+                </div></div>
+                <div class="card text-center border-2 border-warning m-3" style="width: 250px; height: auto;"><div class="card-body">
+                    <img src="images/jujutsucard.webp" alt="" class="card-img-top">
+                    <h2 class="card-title text-danger">jujutsu</h2>
+                    <p class="card-text">onepiece onepiece onepiece onepiece</p>
+                    <button class="btn btn-primary">Watch now</button>
+                </div></div>
+                <div class="card text-center border-2 border-warning m-3" style="width: 250px; height: auto;"><div class="card-body">
+                    <img src="images/demonslayercard.jpg" alt="" class="card-img-top">
+                    <h2 class="card-title text-danger">demon slayer</h2>
+                    <p class="card-text">onepiece onepiece onepiece onepiece</p>
+                    <button class="btn btn-primary">Watch now</button>
+                </div></div>
+                <div class="card text-center border-2 border-warning m-3" style="width: 250px; height: auto;"><div class="card-body">
+                    <img src="images/bleachcard.webp" alt="" class="card-img-top">
+                    <h2 class="card-title text-danger">onepiece</h2>
+                    <p class="card-text">onepiece onepiece onepiece onepiece</p>
+                    <button class="btn btn-primary">Watch now</button>
+                </div></div>
+                <div class="card text-center border-2 border-warning m-3" style="width: 250px; height: auto;"><div class="card-body">
+                    <img src="images/dragoncard.webp" alt="" class="card-img-top">
+                    <h2 class="card-title text-danger">onepiece</h2>
+                    <p class="card-text">onepiece onepiece onepiece onepiece</p>
+                    <button class="btn btn-primary">Watch now</button>
+                </div></div>
+                <div class="card text-center border-2 border-warning m-3" style="width: 250px; height: auto;"><div class="card-body">
+                    <img src="images/horimiyacard.webp" alt="" class="card-img-top">
+                    <h2 class="card-title text-danger">Horimiya</h2>
+                    <p class="card-text">onepiece onepiece onepiece onepiece</p>
+                    <button class="btn btn-primary">Watch now</button>
+                </div></div>
+            </div>
+        </div>  
+        <div class="container">
+          <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center pb-5">
+                            <h2>Contact Us</h2>
+                            <p>Feel free to Contact Us <br>We are always ready to treat you</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <form action="#" class="bg-light p-4 m-auto">
+                        <div class="col-md-12 p-0 pt-4 pb-4">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="text" id="name" class="form-control" required placeholder="Your Full Name" >
+                                </div>
+                            </div>
+    
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="email" spellcheck="false" class="form-control" required placeholder="Your Email Here" id="email-field" onkeyup="validateEmail()">
+                                    <span id="email-error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <textarea rows="3" id="message"  class="form-control" required placeholder="Your Message Here"></textarea>
+                                </div>
+                            </div>
+                            
+    
+                            <button class="btn btn-warning btn-lg btn-block mt-3" id="btn-submited" onclick="sendMail()" >Send Now</button>
+    
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+          </section>
+
+        </div>
+
+    </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    
+   </script>
+   <script>
+    var emailField=document.getElementById("email-field");
+     var emailError=document.getElementById("email-error");
+
+
+    function validateEmail(){
+
+      emailField.style.borderBottomColor= "red";
+
+    
+    
+    if(!emailField.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+        emailError.innerHTML= "Please enter a valid email address";
+    
+    
+        return false;
+    }
+    
+    emailError.innerHTML= "";
+    emailField.style.borderBottomColor= "rgb(20,235,0)";
+    return true;
+
+
+}
+   </script>
+</body>
+</html>
